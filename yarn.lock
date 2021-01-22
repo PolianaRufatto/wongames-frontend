@@ -2676,6 +2676,14 @@
     "@babel/runtime" "^7.12.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
+"@styled-icons/remix-fill@^10.18.0":
+  version "10.18.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@styled-icons/remix-fill/-/remix-fill-10.18.0.tgz#7a7b007b6d3e97ff3b63fc07f7af1d365245b25a"
+  integrity sha1-ensAe20+l/87Y/wH968dNlJFslo=
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@styled-icons/styled-icon" "^10.6.0"
+
 "@styled-icons/styled-icon@^10.6.0":
   version "10.6.3"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@styled-icons/styled-icon/-/styled-icon-10.6.3.tgz#eae0e5e18fd601ac47e821bb9c2e099810e86403"
