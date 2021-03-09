@@ -25,7 +25,7 @@ const Menu = ({ username }: MenuProps) => {
       </MediaMatch>
 
       <S.LogoWrapper>
-        <Logo hideOnMobile/>
+        <Logo hideOnMobile />
       </S.LogoWrapper>
 
       <MediaMatch greaterThan="medium">
@@ -37,10 +37,10 @@ const Menu = ({ username }: MenuProps) => {
 
       <S.MenuGroup>
         <S.IconWrapper>
-          <SearchIcon aria-label="Search"/>
+          <SearchIcon aria-label="Search" />
         </S.IconWrapper>
         <S.IconWrapper>
-          <ShoppingCartIcon aria-label="Open Shopping Cart"/>
+          <ShoppingCartIcon aria-label="Open Shopping Cart" />
         </S.IconWrapper>
         {!username && (
           <MediaMatch greaterThan="medium">
@@ -50,7 +50,7 @@ const Menu = ({ username }: MenuProps) => {
       </S.MenuGroup>
 
       <S.menuFull aria-hidden={!isOpen} isOpen={isOpen}>
-        <CloseIcon aria-label="Close Menu" onClick={() => setIsOpen(false)}/>
+        <CloseIcon aria-label="Close Menu" onClick={() => setIsOpen(false)} />
         <S.MenuNav>
           <S.MenuLink href="#">Home</S.MenuLink>
           <S.MenuLink href="#">Explore</S.MenuLink>
@@ -74,7 +74,6 @@ const Menu = ({ username }: MenuProps) => {
             </S.CreateAccount>
           </S.RegisterBox>
         )}
-        
       </S.menuFull>
     </S.Wrapper>
   )
