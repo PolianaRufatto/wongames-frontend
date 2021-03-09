@@ -30,4 +30,3 @@ const Heading = ({
   </S.Wrapper>
 )
 export default Heading
- 
