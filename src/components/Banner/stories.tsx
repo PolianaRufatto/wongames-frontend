@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Banner, { BannnerProps } from '.'
+import Banner, { BannerProps } from '.'
 
 export default {
   title: 'Banner',
@@ -16,4 +16,20 @@ export default {
   }
 } as Meta
 
-export const Default: Story<BannnerProps> = (args) => <Banner {...args}/>
+export const Default: Story<BannerProps> = (args) => (
+  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
+    <Banner {...args} />
+  </div>
+)
+
+export const WithRibbon: Story<BannerProps> = (args) => (
+  <div style={{ maxWidth: '104rem' }}>
+    <Banner {...args} />
+  </div>
+)
+
+WithRibbon.args = {
+  ribbon: '20% OFF',
+  ribbonSize: 'normal',
+  ribbonColor: 'primary'
+}
