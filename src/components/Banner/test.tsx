@@ -32,7 +32,7 @@ describe('<Banner />', () => {
         {...props}
         ribbon="My Ribbon"
         ribbonSize="small"
-        ribbonColor="Secondary"
+        ribbonColor="secondary"
       />
     )
 
