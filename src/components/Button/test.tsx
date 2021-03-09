@@ -18,7 +18,7 @@ describe('<Button />', () => {
   })
 
   it('should render the small size by default', () => {
-    renderWithTheme(<Button size= "small">Buy now</Button>)
+    renderWithTheme(<Button size="small">Buy now</Button>)
 
     expect(screen.getByRole('button', { name: /Buy now/i })).toHaveStyle({
       height: '3rem',
@@ -27,7 +27,7 @@ describe('<Button />', () => {
   })
 
   it('should render the large size by default', () => {
-    renderWithTheme(<Button size= "large">Buy now</Button>)
+    renderWithTheme(<Button size="large">Buy now</Button>)
 
     expect(screen.getByRole('button', { name: /Buy now/i })).toHaveStyle({
       height: '5rem',
