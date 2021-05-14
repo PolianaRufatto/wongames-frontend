@@ -1,3 +1,5 @@
+import { RouterContext } from 'next/dist/next-server/lib/router-context'
+
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
@@ -21,8 +23,16 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles removeBg />
-      <Story />
+      <RouterContext.Provider
+        value={{
+          push: () => Promise.resolve(),
+          replace: () => Promise.resolve(),
+          prefetch: () => Promise.resolve()
+        }}
+      >
+        <GlobalStyles removeBg />
+        <Story />
+      </RouterContext.Provider>
     </ThemeProvider>
   )
 ]
