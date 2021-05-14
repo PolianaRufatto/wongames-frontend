@@ -30,7 +30,7 @@ const FormSignIn = () => (
       <S.FormLink>
         Don’t have an account?
         <Link href="/sign-up">
-          <a> Sign up</a>
+          <a>Sign up</a>
         </Link>
       </S.FormLink>
     </form>
